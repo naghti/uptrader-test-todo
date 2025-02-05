@@ -1,6 +1,6 @@
 ### Hello world
 
-# Demo(https://aleksvladyko.github.io/todo/)
+# [Demo](https://aleksvladyko.github.io/todo/)
 
 ```
    npm i
