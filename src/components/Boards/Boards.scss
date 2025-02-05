@@ -1,0 +1,87 @@
+@import "../../vars.scss";
+
+.desks {
+  &-content {
+    display: flex;
+    min-height: 100dvh;
+    padding: 40px;
+    justify-content: space-between;
+  }
+}
+
+.board {
+  width: 30%;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  height: 400px;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgb(65, 65, 67); /* color of the tracking area */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(169, 161, 148); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+  }
+  &__title {
+    padding: 10px 0;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 1px solid $border-color;
+  }
+  &__item {
+    width: 90%;
+    margin: 10px auto;
+    height: 100px;
+  }
+}
+
+.item {
+  border: 1px solid;
+  border-radius: 10px;
+  background: $card-color;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+    &-taskcount {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      width: 13px;
+      border-radius: 50%;
+      border: 1px solid $info-color;
+      position: relative;
+      top: 7px;
+      left: -3px;
+    }
+  }
+  &__deadline {
+    font-size: 14px;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__more {
+    background: $success-color;
+    padding: 5px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+  }
+}
